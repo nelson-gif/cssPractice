@@ -9,10 +9,13 @@ nav{
     width: 100%;
     border: 2px solid red;
     padding: 20px;
-    height: 40px;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.71);
+    position: fixed;
 }
 
 nav  ul{
@@ -24,7 +27,7 @@ nav  ul{
 
 nav ul li a{
     text-decoration: none;
-    color: #6d7b93;
+    color: #808ea3;
     font-weight: bold;
 }
 nav ul li{
@@ -34,10 +37,15 @@ nav h3{
     color: #3a5ad6;
     font-weight: bold;
     font-size: 20px;
+    opacity: 1;
 }
 
 .button a{
     color: #fff;
+}
+
+nav{
+    
 }
 
 /* button styles */
@@ -59,7 +67,30 @@ nav h3{
 /* header styles */
 
 header{
-    height: 300px;
+    display: flex;
+    height: 70vh;
     border: 2px solid blue;
-    padding: 100px;
+    z-index: -1;
 }
+
+/* right */
+.right{
+    width: 50%;
+    height: 100%;
+    border: px solid rebeccapurple;
+    background: #3959d7 url('../assets/images/nurse.jpg') no-repeat center;
+    background-size: cover; 
+    background-color: #a6cce3;
+    box-sizing: border-box;
+}
+
+
+/* left */
+.left{
+    width: 50%;
+    border: 1px solid saddlebrown;
+    max-height: 100%;
+    padding: 160px 80px;
+    box-sizing: border-box;
+}
+
