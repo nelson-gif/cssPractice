@@ -7,7 +7,7 @@
 /* navegacion styles */
 nav{
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 20px;
     height: 5vh;
     display: flex;
@@ -44,14 +44,14 @@ nav h3{
     color: #fff;
 }
 
-nav{
-    
+nav a:hover{
+    color: rgb(180, 180, 45);
 }
 
 /* button styles */
 .button{
     border: 1px solid blue;
-    padding: 10px;
+    padding: 15px;
     background-color: #3959d7;
     color: #fff;
     width: 116px;
@@ -68,7 +68,7 @@ nav{
 
 header{
     display: flex;
-    height: 70vh;
+    height: 80vh;
     border: 2px solid blue;
     z-index: -1;
 }
@@ -82,6 +82,7 @@ header{
     background-size: cover; 
     background-color: #a6cce3;
     box-sizing: border-box;
+    z-index: -1;
 }
 
 
@@ -90,7 +91,72 @@ header{
     width: 50%;
     border: 1px solid saddlebrown;
     max-height: 100%;
-    padding: 160px 80px;
+    padding: 110px 80px;
     box-sizing: border-box;
 }
 
+.left > p{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+/* left > box */
+.box{
+    /* border: 2px solid green; */
+    padding: 20px;
+    max-height: 300px;
+}
+
+.box h1, .box p{
+    display: inline-block;
+    margin: 20px;
+}
+
+.box h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #1f3e72;
+}
+
+.box p{
+    color: #738198;
+    font-weight: bold;
+}
+
+.box span{
+    color: #2e4b7c;
+}
+
+.box .icon{
+    color: #ffd119;
+    padding: 4px;
+    background-color: #fffae6;
+    vertical-align: bottom;
+    box-shadow: 0px 9px 10px #fffae6;
+}
+
+/* left > form */
+form{
+    
+    padding: 10px 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: 13vh;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.722);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #138de4;
+}
+
+.left form .little-box{
+    width: 20%;
+    max-height: 100px;
+    padding: 10px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
