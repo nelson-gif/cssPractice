@@ -33,11 +33,12 @@ nav ul li a{
 nav ul li{
     padding: 10px;
 }
-nav h3{
+.site-name{
     color: #3a5ad6;
     font-weight: bold;
     font-size: 20px;
     opacity: 1;
+    text-decoration: none;
 }
 
 .button a{
@@ -66,7 +67,7 @@ nav a:hover{
 
 /* header styles */
 
-header{
+header, .container2{
     display: flex;
     height: 80vh;
     /* border: 2px solid blue; */
@@ -87,7 +88,7 @@ header{
 
 
 /* left */
-.left{
+.left, .left2{
     width: 50%;
     /* border: 1px solid saddlebrown; */
     max-height: 100%;
@@ -108,27 +109,25 @@ header{
     max-height: 300px;
 }
 
-.box h1, .box p{
-    display: inline-block;
-    margin: 20px;
-}
-
-.box h1{
+.box h1, .box h2, .left2 h2, .box h4{
     text-transform: capitalize;
     font-size: 40px;
     color: #1f3e72;
+    margin: 20px;
 }
 
 .box p{
     color: #738198;
     font-weight: bold;
+    line-height: 30px;
+    margin: 20px;
 }
 
 .box span{
     color: #2e4b7c;
 }
 
- .icon{
+.icon{
     color: #ffd119;
     padding: 4px;
     background-color: #fffae6;
@@ -181,5 +180,275 @@ form .icon, .icon-blue{
     color: #244275;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* logos */
+.images-logos{
+    /* border: 2px solid green; */
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    /* border: 2px solid black; */
+    width: 20%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    opacity: 0.2;
+}
+
+/* second section container */
+.container{
+    /* border: 2px solid crimson; */
+    width: 100%;
+    height: 80vh;
+    padding: 0px 80px;
+    box-sizing: border-box;
+}
+
+.articles{
+    padding-left: 40px; /*total 120px left*/
+    box-sizing: border-box;
+    /* border: 2px solid slateblue; */
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.benefits{
+    border: 2px solid rgba(121, 134, 156, 0.223);
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.benefits:hover{
+    box-shadow: 0px 0px 50px rgba(19, 141, 228, 0.354);
+    height: 95%;
+}
+
+.benefits .icon{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.benefits h4, .benefits p{
+    margin-left: 25px;
+    margin-bottom: 45px;
+    font-size: 20px;
+    color: #264377;
+}
+
+.benefits p{
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+    padding-right: 20px;
+    color: #79869c;
+}
+
+/* section 3 container2 */
+.right2{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid rebeccapurple; */
+    background: #3959d7 url('../assets/images/vector.png') no-repeat center;
+    background-size: cover; 
+    background-color: #a6cce3;
+    box-sizing: border-box;
+}
+
+.left2{
+    padding: 20px 80px;
+}
+
+.left2 p{
+    color: #738198;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+.drop-down h4 {
+    /* border: 2px solid red; */
+    width: 93%;
+    display: inline-block;
+}
+
+.drop-down{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid rgba(121, 134, 156, 0.074);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+.drop-down p{
+    display: none;
+}
+
+.drop-down:hover p{
+    display: block;
+}
+
+.drop-down:hover{
+    box-shadow: 0px 0px 40px rgba(19, 141, 228, 0.109);
+}
+
+.right3{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid rebeccapurple; */
+    background: #3959d7 url('../assets/images/doctorss.png') no-repeat center;
+    background-size: contain; 
+    background-color: #2872de;
+    box-sizing: border-box;
+}
+
+/* boxes for the emergency contact section*/
+.boxes{
+    /* border: 2px solid green; */
+    height: 57vh;
+    width: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-box{
+    border: 2px solid rgba(121, 134, 156, 0.223);
+    border-radius: 10px;
+    height: 35%;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-box .button{
+    background-color: #f1f5ff;
+    color: #2b4bc9;
+    font-weight: bolder;
+    width: 80%;
+    text-align: center;
+}
+
+.contact-box:hover{
+    box-shadow: 0px 0px 50px rgba(19, 141, 228, 0.354);
+    height: 38%;
+}
+
+.contact-box .button:hover{
+    background-color: #2b4bc9;
+    color: #f1f5ff;
+    
+}
+
+/*footer section, before the footer tag*/
+.footer-section{
+    /* border: 2px solid saddlebrown; */
+    background-color: #eef3ff;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.footer-left, .footer-right{
+    /* border: 1px solid salmon; */
+    width: 50%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+}
+
+.box h4{
+    font-size: 25px;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.box-info{
+    /* border: 1px solid sienna; */
+    padding: 30px;
+    width: 30%;
+    height: 95%;
+    box-sizing: border-box;
+}
+
+.box-info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.box-info ul li a{
+    text-decoration: none;
+    color: #707e95;
+    font-weight: 500;
+}
+
+.box-info ul li a:hover{
+    color: #2b4bc9;
+}
+
+.box-info h4{
+    color: #1f3e72;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    padding: 10px 90px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eef3ff;
+}
+
+footer p{
+    color: #707e95;
+    font-weight: 500;
+}
+
+#end{
+    display: flex;
+}
+
+#end p{
+    margin-left: 70px;
+    color: #707e95;
+    font-weight: 500;
 }
 
